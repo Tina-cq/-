@@ -1,0 +1,63 @@
+/* pages/infoDetail/infoDetail.wxss */
+/* pages/sharePage/sharePage.wxss */
+/* components/shareBox/shareBox.wxss */
+page{
+  overflow-y: auto;
+}
+.shareBoxBg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* z-index:999; */
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.2);
+    text-align: center;
+    overflow-y: auto;
+}
+
+
+.savecanvas{
+    color:#fff;
+    font-size:28rpx;
+    line-height:80rpx;
+    background: #0165FF;
+    text-align: center;
+    padding: 0 30rpx;
+    border-radius: 80rpx;
+}
+.savecanvas02{
+    background: #fff;
+    line-height:88rpx;
+    text-align: center;
+    font-size:30rpx;
+    color:#666;
+    position: fixed;
+    left: 0;
+    width: 100vw;
+}
+.savecanvas02 view:first-of-type{
+  border-bottom: 2rpx solid #ccc;
+}
+.canvas{
+    width:100vw;
+    position: fixed;
+    left: 200vw;
+    top: 0;
+}
+.canvaspic{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.4);
+}
+.canvaspic image{
+  position: fixed;
+  left: 50%;
+  top: calc((100vh - 176rpx) / 2);
+  transform: translate(-50% ,-50%);
+}
+

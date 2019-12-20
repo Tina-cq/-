@@ -1,0 +1,14 @@
+<!--pages/sharePage/sharePage.wxml-->
+
+<view bindtap="gotoShare">分享到朋友圈</view>
+
+<!-- 分享 -->
+  <view class='canvaspic' wx:if="{{showCanvasPic}}" catchtap="hideCanvasPic">
+    <image style="width:{{coverImageW}}px;height:{{coverImageH}}px;" src="{{canvaspic}}" catchtap='showCanvasPic'></image>
+  </view>
+  <view class='savecanvas02' style="bottom:{{showCanvasPic?0:'-176rpx'}};">
+    <view bindtap='savecanvas02'>保存到相册</view>
+    <view bindtap='hideCanvasPic'>取消</view>
+  </view>
+  
+  <canvas class="canvas" style="height:{{canvasH}}px;" canvas-id="myCanvas"/>
